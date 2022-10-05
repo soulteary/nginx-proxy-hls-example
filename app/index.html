@@ -1,0 +1,56 @@
+<!-- https://bharadwajpro.github.io/m3u8-player/ -->
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>M3U8 Player</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+</head>
+<body>
+    <main>
+        <div class="container py-4">
+            <div class="p-2 mb-2 bg-light rounded-3">
+                <div class="container-fluid py-1">
+                    <video id="video" style="width: 100%; height: 100%;" controls=""></video>
+                </div>
+            </div>
+            <div class="row align-items-md-stretch">
+                <div class="col-md-12">
+                    <div class="h-100 p-3 text-bg-dark rounded-3">
+                        <h2>M3U8 Player</h2>
+                        <div class="input-group">
+                            <input type="text" class="form-control" placeholder="Paste the m3u8 link here"
+                                id="m3u8-placeholder">
+                            <span class="input-group-btn">
+                                <button class="btn btn-primary" type="button" id="play-btn">Play</button>
+                            </span>
+                        </div>
+                        <ul class="list-group" id="switch-src">
+                            <li class="list-group-item">
+                                <a href="javascript:void(0);" data-url="http://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8">原始直播源: http://gcalic.v.myalicdn.com/gc/wgw05_1/index.m3u8</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="javascript:void(0);" data-url="http://localhost:8090/proxy/example1/gc/wgw05_1/index.m3u8">全部转发：http://localhost:8090/proxy/example1/gc/wgw05_1/index.m3u8</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="javascript:void(0);" data-url="http://localhost:8090/proxy/example2/gc/wgw05_1/index.m3u8">资源部署CDN：http://localhost:8090/proxy/example2/gc/wgw05_1/index.m3u8</a>
+                            </li>
+                            <li class="list-group-item">
+                                <a href="javascript:void(0);" data-url="http://localhost:8090/proxy/example3/gc/wgw05_1/index.m3u8">只转发mpegurl：http://localhost:8090/proxy/example3/gc/wgw05_1/index.m3u8</a>
+                            </li>
+                          </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <script src="assets/js/jquery-3.2.1.min.js"></script>
+    <script src="assets/js/popper.js?v=1.12.3"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <script src="assets/js/mousetrap.min.js"></script>
+    <script src="assets/js/hls.min.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
